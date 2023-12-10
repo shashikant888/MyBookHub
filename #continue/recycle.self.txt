@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/txtRecyclerRowItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="List Item" />
+    <ImageView
+        android:id="@+id/imgBookDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_book_default"
+        android:layout_below="@id/txtRecyclerRowItem"
+        android:padding="10dp"
+        />
+    <TextView
+        android:id="@+id/txtBookName"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Book 1"
+        android:layout_below="@id/txtRecyclerRowItem"
+        android:layout_toRightOf="@id/imgBookDefault"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/txtBookAuthorName"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Mr. X"
+        android:layout_below="@id/txtBookName"
+        android:layout_toRightOf="@id/imgBookDefault"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/txtBookPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs. 00"
+        android:layout_below="@id/txtBookAuthorName"
+        android:layout_toRightOf="@id/imgBookDefault"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+        android:textColor="#357a38"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/txtRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.3"
+        android:layout_below="@id/txtRecyclerRowItem"
+        android:textColor="@color/yellow"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/txtBookAuthorName"
+        android:layout_marginLeft="80dp"
+        android:drawableLeft="@drawable/ic_rating"
+
+        />
+
+
+
+</RelativeLayout>
